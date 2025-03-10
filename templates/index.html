@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stroke Prediction</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Stroke Prediction using Machine Learning</h2>
+        <p class="text-justify">
+            Stroke is the second leading cause of death globally, responsible for approximately 11% of total deaths (WHO). 
+            Stroke is a medical condition characterized by disrupted blood supply to the brain, leading to cellular death. 
+            Signs and symptoms of a stroke may include an inability to move or feel on one side of the body, problems understanding 
+            or speaking, dizziness, or loss of vision to one side.
+        </p>
+
+        <div class="mt-4">
+            <form method="POST" class="row g-3">
+                <h4 class="mb-3">User Input Features</h4>
+                
+                <div class="col-md-6">
+                    <div class="form-floating">
+                        <input type="number" class="form-control" name="age" id="age" min="1" max="100" required>
+                        <label for="age">Age</label>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="form-floating">
+                        <select class="form-select" name="gender" id="gender" required>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                        </select>
+                        <label for="gender">Gender</label>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="form-floating">
+                        <input type="number" step="0.01" class="form-control" name="avg_glucose_level" id="avg_glucose_level" min="40.0" max="300.0" required>
+                        <label for="avg_glucose_level">Average Glucose Level</label>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="form-floating">
+                        <select class="form-select" name="hypertension" id="hypertension" required>
+                            <option value="0">No</option>
+                            <option value="1">Yes</option>
+                        </select>
+                        <label for="hypertension">Hypertension</label>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="form-floating">
+                        <select class="form-select" name="heart_disease" id="heart_disease" required>
+                            <option value="0">No</option>
+                            <option value="1">Yes</option>
+                        </select>
+                        <label for="heart_disease">Heart Disease</label>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="form-floating">
+                        <select class="form-select" name="ever_married" id="ever_married" required>
+                            <option value="Yes">Yes</option>
+                            <option value="No">No</option>
+                        </select>
+                        <label for="ever_married">Ever Married</label>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="form-floating">
+                        <select class="form-select" name="residence_type" id="residence_type" required>
+                            <option value="Urban">Urban</option>
+                            <option value="Rural">Rural</option>
+                        </select>
+                        <label for="residence_type">Residence Type</label>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="form-floating">
+                        <select class="form-select" name="smoking_status" id="smoking_status" required>
+                            <option value="Never Smoked">Never Smoked</option>
+                            <option value="Formerly Smoked">Formerly Smoked</option>
+                            <option value="Smokes">Smokes</option>
+                            <option value="Unknown">Unknown</option>
+                        </select>
+                        <label for="smoking_status">Smoking Status</label>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="form-floating">
+                        <select class="form-select" name="work_type" id="work_type" required>
+                            <option value="Private">Private</option>
+                            <option value="Self-employed">Self-employed</option>
+                            <option value="Government job">Government job</option>
+                            <option value="Children">Children</option>
+                            <option value="Never Worked">Never Worked</option>
+                        </select>
+                        <label for="work_type">Work Type</label>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="form-floating">
+                        <input type="number" class="form-control" name="bmi" id="bmi" min="10" max="100" required>
+                        <label for="bmi">BMI</label>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary w-100">Predict Stroke Likelihood</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
