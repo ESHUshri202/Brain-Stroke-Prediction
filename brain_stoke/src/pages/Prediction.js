@@ -6,7 +6,6 @@ const Prediction = () => {
  const [result, setResult] = useState('');
   return (
     <div>
-        <h1>Stroke Prediction</h1>
         <div className='p-12'>
             <PredictionForm setResult={setResult} />
             {result && <Result result={result} />}
