@@ -39,6 +39,9 @@ const PredictionForm = ({ setResult }) => {
 
     return (
         <form onSubmit={handleSubmit}>
+            <label>Fill in the details to predict stroke:</label>
+            <br />
+            <label>Enter Gender</label>
             <input type="text" name="gender" placeholder="Gender" onChange={handleChange} required />
             <input type="number" name="age" placeholder="Age" onChange={handleChange} required />
             <input type="number" name="hypertension" placeholder="Hypertension (0 or 1)" onChange={handleChange} required />
