@@ -31,9 +31,9 @@ root.render(
     <div className="overflow-x-hidden text-neutral-300 antialiased selection:bg-cyan-500 
     selection:text-cyan-400">
       <div className="fixed top-0 -z-10 h-full w-full ">
-      <div className="absolute inset-0 -z-10 h-full w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]"></div>
+      <div className="absolute inset-0 -z-10 h-full w-full items-center px-5 py-24 bg-gradient-to-br from-[#f59e0b] via-[#ea580c] to-[#b91c1c]"></div>
       </div>
-      <div className="container mx-auto px-8">
+      <div className="container mx-auto ">
         <RouterProvider router={router}/>
       </div>  
     </div>

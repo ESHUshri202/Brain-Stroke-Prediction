@@ -26,7 +26,7 @@ const NavBar = () => {
 
   return (
     <>
-      <nav className="mb-14 flex flex-col sm:flex-row items-center justify-between py-4 bg-black rounded-b-2xl ">
+      <nav className="mt-4 mb-14 flex flex-col sm:flex-row items-center bg-slate-900 justify-between py-4 shadow-lg shadow-red-800 rounded-xl px-10  ">
         <div className="flex flex-shrink-0 items-center">
           <Link to="/">
             <FaBriefcaseMedical  className="text-5xl text-red-600 shadow-lg "/>
