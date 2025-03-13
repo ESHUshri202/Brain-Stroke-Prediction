@@ -1,6 +1,7 @@
 // src/components/PredictionForm.js
 import React, { useState } from 'react';
 import axios from 'axios';
+import { Link } from "react-router-dom";
 
 const PredictionForm = ({ setResult }) => {
     const [formData, setFormData] = useState({
@@ -31,7 +32,7 @@ const PredictionForm = ({ setResult }) => {
                 }
             });
             // Set the result from Flask response
-            setResult(response.data.result);
+            setResult( {prediction: response.data.result, formData});
         } catch (error) {
             console.error("There was an error making the request!", error);
         }

@@ -10,6 +10,7 @@ import About from './pages/About';
 import Blog from './pages/Blog';
 import Prediction from './pages/Prediction';
 import Contact from './pages/Contact';
+import Result from './components/Result';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -19,6 +20,7 @@ const router = createBrowserRouter(
       <Route path = '/blog' element={<Blog/>}/>
       <Route path = '/prediction' element={<Prediction/>}/>
       <Route path = '/contact' element={<Contact/>}/>
+      <Route path = '/result' element={<Result/>}/>
 
     </Route>
   )
