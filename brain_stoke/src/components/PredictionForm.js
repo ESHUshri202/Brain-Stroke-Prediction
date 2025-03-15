@@ -26,7 +26,7 @@ const PredictionForm = ({ setResult }) => {
         e.preventDefault();
         try {
             // Send POST request to Flask API
-            const response = await axios.post('http://127.0.0.1:5000/', formData, {
+            const response = await axios.post('https://brain-stroke-prediction-f2kk.onrender.com/', formData, {
                 headers: {
                     'Content-Type': 'application/json'
                 }
