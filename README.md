@@ -7,8 +7,9 @@ Brain strokes are a leading cause of disability and death worldwide. Early predi
 1. **Data Collection & Preprocessing**
 2. **Machine Learning Model Training**
 3. **Flask API Development**
-4. **Frontend Development using React.js**
-5. **Integration & Deployment**
+4. **Firebase Integration**
+5. **Frontend Development using React.js**
+6. **Integration & Deployment**
 
 ---
 
@@ -49,10 +50,10 @@ We use a dataset containing relevant medical features such as:
 
 ## 3. Flask API Development
 - Develop a Flask-based REST API to serve the model predictions
-- Load the trained model using `joblib` or `pickle`
+- Load the trained model using `joblib`
 - Create API endpoints:
   - `/predict` for making stroke predictions
-  - `/health` for checking server status
+  - `/result` for checking server status
 - Implement CORS for frontend-backend communication
 
 
@@ -61,13 +62,12 @@ We use a dataset containing relevant medical features such as:
 - Create a form to accept user input for medical features
 - Send the input to the Flask API and display prediction results
 - Implement state management using **React Hooks**
-- Use **Bootstrap** or **Tailwind CSS** for styling
+- Use **Tailwind CSS** for styling
 
 
 ## 5. Integration & Deployment
-- Deploy **Flask API** using **Heroku** or **AWS Lambda**
-- Deploy **React App** using **Vercel** or **Netlify**
-- Use **Docker** for containerization
+- Deploy **Flask API** using **Render** 
+- Deploy **React App** using **Vercel**
 - Implement security measures like **input validation** and **API authentication**
 
 ## Conclusion
