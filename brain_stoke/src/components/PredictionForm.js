@@ -105,9 +105,9 @@ const PredictionForm = ({ setResult }) => {
                                     <option value="Rural">Rural</option>
                                 </select>
                                 <label>Average Glucose Level</label>
-                                <input className='block w-full p-4 rounded-lg bg-[#060125] text-white placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 invalid:border-red-500 ' type="number" name="avg_glucose_level" min={1} max={100} placeholder="Avg Glucose Level" onChange={handleChange} required />
+                                <input className='block w-full p-4 rounded-lg bg-[#060125] text-white placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 invalid:border-red-500 ' type="number" name="avg_glucose_level" min={1} max={1000} placeholder="Avg Glucose Level" onChange={handleChange} required />
                                 <label>BMI</label>
-                                <input className='block w-full p-4 rounded-lg bg-[#060125] text-white placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 invalid:border-red-500 ' type="number" name="bmi" placeholder="BMI" min={1} max={100} onChange={handleChange} required />
+                                <input className='block w-full p-4 rounded-lg bg-[#060125] text-white placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 invalid:border-red-500 ' type="number" name="bmi" placeholder="BMI" min={1} max={200} onChange={handleChange} required />
                                 <label>Smoking Status</label>
                                 <select  className='h-14 w-full pr-12 pl-12 rounded-xl bg-[#060125] cursor-pointer inline-flex align-middle font-bold text-neutral-400 hover:text-red-800 active:text-red-900 focus:text-red-800 transition ease-in-out duration-300 border-white' name='smoking_status' onChange={handleChange} required>
                                     <option value="">Select Smoking Status</option>

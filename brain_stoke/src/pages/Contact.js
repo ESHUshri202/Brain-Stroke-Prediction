@@ -49,7 +49,7 @@ const Contact = () => {
           />
         </div>
 
-        <div className="relative -mt-16 flex flex-col md:flex-row justify-center gap-6 px-6">
+        <div className="relative -mt-16 flex flex-col md:flex-row justify-center  gap-6 px-6 ">
           <div className="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center w-full max-w-xs">
             <span className="text-blue-500 text-2xl">📞</span>
             <h3 className="text-gray-700 font-semibold mt-2">Give us a call</h3>
@@ -125,14 +125,14 @@ const Contact = () => {
               )}
             </form>
           </div>
-          <div className="grid grid-cols-1 gap-4 w-full max-w-xl text-center md:text-left">
+          <div className="flex flex-col justify-center items-center gap-4 w-full max-w-xl text-center md:text-left ">
             <motion.p
               whileInView={{ opacity: 1, x: 0 }}
               initial={{ opacity: 0, x: -100 }}
               transition={{ duration: 0.5 }}
               className="flex flex-col md:flex-row gap-4 items-center my-4 text-xl md:text-2xl lg:text-3xl"
             >
-              <ImLocation2 className="text-red-600" />
+              <ImLocation2 className="text-black" />
               {CONTACT.address}
             </motion.p>
             <motion.p
