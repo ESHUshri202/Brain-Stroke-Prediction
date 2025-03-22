@@ -8,11 +8,11 @@ const Home = () => {
         <div className="flex flex-col gap-3">
           <h1 className="text-7xl font-bold">Welcome To Medico</h1>
           <h3 className="text-5xl font-bold bg-gradient-to-l from-[#c0a795] via-[#a50202] to-[#011272] inline-block text-transparent bg-clip-text">
-            Brain Stoker
+            Brain Stroker Checker
           </h3>
           <br />
           <div className="flex gap-4 ">
-            <Link to="/blog">
+            <Link to="/about">
               <span className="p-4 bg-white text-black rounded-lg font-bold">
                 Read More
               </span>
